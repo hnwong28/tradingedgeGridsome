@@ -17,8 +17,7 @@
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
     "dashboard-widget-netlify",
-    "asset-source-unsplash",
-    "media"
+    "asset-source-unsplash"
   ],
   "parts": [
     {
