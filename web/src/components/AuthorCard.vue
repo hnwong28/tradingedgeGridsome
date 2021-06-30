@@ -14,8 +14,7 @@
     <p class="author__intro">{{$static.settings.description}}</p>
 
     <p class="author__links">
-      <a href="//twitter.com/sanity_io">Follow on Twitter</a>
-      <a href="//github.com/sanity-io/sanity-template-gridsome-blog">GitHub</a>
+      <a href="https://www.notion.so/ca18f9457b7945bab7a58a6db2d43d69?v=0317b8cc57b34b06870d54fbae1026cd">Trading Calendar</a>
     </p>
   </div>
 </template>
@@ -73,8 +72,8 @@ export default {
 
   &__image {
     border-radius: 100%;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 1em;
   }
 
@@ -87,7 +86,7 @@ export default {
   }
 
   &__links {
-    margin-top: -0.5em;
+    margin-top: -0.2em;
     a {
       margin: 0 0.5em;
     }
