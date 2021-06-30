@@ -14,7 +14,7 @@
     <p class="author__intro">{{$static.settings.description}}</p>
 
     <p class="author__links">
-      <a href="https://www.notion.so/ca18f9457b7945bab7a58a6db2d43d69?v=0317b8cc57b34b06870d54fbae1026cd">Trading Calendar</a>
+      <a href="https://www.notion.so/ca18f9457b7945bab7a58a6db2d43d69?v=0317b8cc57b34b06870d54fbae1026cd" target ="_blank">Trading Calendar</a>
     </p>
   </div>
 </template>
