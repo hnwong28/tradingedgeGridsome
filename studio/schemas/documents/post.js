@@ -4,18 +4,30 @@ export default {
   name: 'post',
   type: 'document',
   title: 'Blog Post',
+  initialValue: () => ({
+    publishedAt: new Date().toISOString(),
+    authors: [
+      {
+        _type: 'authorReference',
+        author: {
+          _ref: '1b1c7451-c976-48fd-b416-73bf5a356f10',
+          _type: 'reference'
+        }
+      }
+    ]
+  }),
   fields: [
     {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'Titles should be catchy, descriptive, and not too long'
+      description: 'Title'
     },
     {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
-      description: 'Some frontends will require a slug to be set to be able to show the post',
+      description: 'Slug',
       options: {
         source: 'title',
         maxLength: 96
@@ -37,7 +49,7 @@ export default {
       type: 'excerptPortableText',
       title: 'Excerpt',
       description:
-        'This ends up on summary pages, on Google, when people share your post in social media.'
+        'Summary'
     },
     {
       name: 'authors',
