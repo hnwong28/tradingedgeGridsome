@@ -34,10 +34,17 @@ export default {
       }
     },
     {
-      name: 'publishedAt',
-      type: 'datetime',
-      title: 'Published at',
-      description: 'This can be used to schedule post for publishing'
+      name: 'categories',
+      type: 'array',
+      title: 'Categories',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'category'
+          }
+        }
+      ]
     },
     {
       name: 'mainImage',
@@ -57,25 +64,18 @@ export default {
         'Summary'
     },
     {
+      name: 'publishedAt',
+      type: 'datetime',
+      title: 'Published at',
+      description: 'This can be used to schedule post for publishing'
+    },
+    {
       name: 'authors',
       title: 'Authors',
       type: 'array',
       of: [
         {
           type: 'authorReference'
-        }
-      ]
-    },
-    {
-      name: 'categories',
-      type: 'array',
-      title: 'Categories',
-      of: [
-        {
-          type: 'reference',
-          to: {
-            type: 'category'
-          }
         }
       ]
     }
