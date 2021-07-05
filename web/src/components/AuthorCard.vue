@@ -89,6 +89,8 @@ export default {
     margin-top: -0.2em;
     a {
       margin: 0 0.5em;
+      font-weight: 600;
+      font-size: 1.2em;
     }
   }
 }
